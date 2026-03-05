@@ -3,7 +3,7 @@
 Ein Tool, das ich entwickelt habe, um Entwicklern schnell zu zeigen, 
 wo ihre Web-App in Sachen Sicherheit und Datenschutz steht.
 
-**Live:** https://eb-sec.github.io/privacycheck
+**Live:** https://eb-sec.github.io/PrivacyCheck/
 
 ---
 
