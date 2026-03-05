@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <title>PrivacyCheck – DSGVO Web-App Check</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app-container">
+
+    <header>
+      <h1>PrivacyCheck</h1>
+      <p>
+        von Elias Bach – für Cybersecurity Portfolio<br />
+        <small>Feb 2026 • Masterschool Cybersecurity</small>
+      </p>
+      <p class="subtitle">
+        Einfacher Selbst-Check für Datenschutz.
+      </p>
+    </header>
+
+    <main>
+      <div class="steps-indicator">
+        <div class="step-indicator active" data-step="1">1. App-Profil</div>
+        <div class="step-indicator" data-step="2">2. Daten &amp; Zwecke</div>
+        <div class="step-indicator" data-step="3">3. Datenschutz-Check</div>
+        <div class="step-indicator" data-step="4">4. Ergebnis</div>
+      </div>
+
+      <section class="step step-1 active">
+        <h2>Schritt 1: App-Profil</h2>
+        <div class="form-group">
+          <label for="appName">Name deiner Web-App</label>
+          <input id="appName" type="text" placeholder="z.B. Lernplattform X" />
+        </div>
+        <div class="form-group">
+          <label for="appType">Art der Anwendung</label>
+          <select id="appType">
+            <option value="">Bitte wählen</option>
+            <option value="saas">SaaS / Online-Service</option>
+            <option value="shop">Online-Shop</option>
+            <option value="content">Content-Website / Blog</option>
+            <option value="internal">Interne Unternehmensanwendung</option>
+            <option value="other">Sonstiges</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="targetAudience">Zielgruppe</label>
+          <input id="targetAudience" type="text" placeholder="z.B. Erwachsene in DE/EU" />
+        </div>
+      </section>
+
+      <section class="step step-2">
+        <h2>Schritt 2: Daten &amp; Zwecke</h2>
+        <h3>Welche Daten verarbeitest du?</h3>
+        <div class="checkbox-group" id="dataCategories">
+          <label><input type="checkbox" value="name" /> Name</label>
+          <label><input type="checkbox" value="email" /> E-Mail-Adresse</label>
+          <label><input type="checkbox" value="ip" /> IP-Adresse / Logdaten</label>
+          <label><input type="checkbox" value="profile" /> Profil- / Kontodaten</label>
+          <label><input type="checkbox" value="payment" /> Zahlungsdaten</label>
+          <label><input type="checkbox" value="tracking" /> Tracking-/Analytics-Daten</label>
+          <label><input type="checkbox" value="special" /> Besondere Kategorien (Gesundheit etc.)</label>
+        </div>
+        <h3>Zwecke der Verarbeitung</h3>
+        <div class="checkbox-group" id="processingPurposes">
+          <label><input type="checkbox" value="registration" /> Registrierung / Konto</label>
+          <label><input type="checkbox" value="contract" /> Vertragserfüllung (z.B. Bestellung)</label>
+          <label><input type="checkbox" value="newsletter" /> Newsletter / Marketing</label>
+          <label><input type="checkbox" value="analytics" /> Nutzungsanalyse / Analytics</label>
+          <label><input type="checkbox" value="support" /> Support / Kontaktformular</label>
+        </div>
+      </section>
+
+      <section class="step step-3">
+        <h2>Schritt 3: Datenschutz-Check</h2>
+        <p class="hint">
+          Beantworte die folgenden Fragen zu deiner App. Es geht um zentrale DSGVO-
+          und Privacy-by-Design-Prinzipien.
+        </p>
+        <div id="questionsContainer"></div>
+      </section>
+
+      <section class="step step-4">
+        <h2>Schritt 4: Ergebnis</h2>
+        <div id="resultSummary" class="result-summary"></div>
+        <div class="chart-container">
+          <h3>Konformität pro Kategorie</h3>
+          <div id="svgChartContainer"></div>
+          <div id="chartLegende" class="chart-legende"></div>
+        </div>
+               <div id="resultDetails" class="result-details"></div>
+        
+        <div class="action-buttons" style="display: flex; gap: 1rem; justify-content: center; margin-top: 2rem;">
+          <button id="printReportBtn" class="secondary-btn">📄 Als Report drucken</button>
+          <button id="exportCsvBtn" class="primary-btn" style="background: #10b981; box-shadow: 0 8px 25px rgba(16,185,129,0.3);">
+            📋 Maßnahmen als CSV (Jira/Trello)
+          </button>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="nav-footer">
+      <button id="prevBtn" class="secondary-btn" disabled>Zurück</button>
+      <button id="nextBtn" class="primary-btn">Weiter</button>
+    </footer>
+
+    <footer class="legal-footer">
+      <p>Hinweis: Dieses Tool ist ein Lern- und Demo-Projekt und ersetzt keine Rechtsberatung.</p>
+      <p>Elias Bach • Berlin 2026</p>
+    </footer>
+
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
