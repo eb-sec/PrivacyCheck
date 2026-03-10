@@ -11,11 +11,11 @@ wo ihre Web-App in Sachen Sicherheit und Datenschutz steht.
 
 Du gibst an, welche Technologien du nutzt (z.B. SQL-Datenbank, AWS, 
 Docker) und welche Daten deine App verarbeitet. Basierend darauf 
-bekommt du einen maßgeschneiderten Fragenkatalog – keine generischen 
+bekommst du einen maßgeschneiderten Fragenkatalog, keine generischen 
 Checklisten, sondern Fragen die wirklich zu deinem Stack passen.
 
 Am Ende siehst du konkret, was fehlt, warum es ein Problem ist und 
-wie du es behebst – inklusive Code-Beispielen.
+wie du es behebst, inklusive Code-Beispielen.
 
 ---
 
