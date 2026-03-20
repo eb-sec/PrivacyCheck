@@ -38,6 +38,6 @@ um zu zeigen was ohne React & Co. möglich ist.
 
 ## Hintergrund
 
-Entstanden während meines Cybersecurity-Studiums bei Masterschool (2026).
+Entstanden während meines Cybersecurity-Trainings bei Masterschool (2026).
 Ich wollte ein Tool bauen, das ich selbst bei eigenen Projekten 
 tatsächlich nutzen würde.
