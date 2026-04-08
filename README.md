@@ -1,43 +1,36 @@
 # PrivacyCheck
 
-Ein Tool, das ich entwickelt habe, um Entwicklern schnell zu zeigen, 
-wo ihre Web-App in Sachen Sicherheit und Datenschutz steht.
+A tool I built to give developers a quick, clear picture of where their web app stands on security and privacy.
 
 **Live:** https://eb-sec.github.io/PrivacyCheck/
 
 ---
 
-## Was macht es?
+## What does it do?
 
-Du gibst an, welche Technologien du nutzt (z.B. SQL-Datenbank, AWS, 
-Docker) und welche Daten deine App verarbeitet. Basierend darauf 
-bekommst du einen maßgeschneiderten Fragenkatalog, keine generischen 
-Checklisten, sondern Fragen die wirklich zu deinem Stack passen.
+You specify which technologies you use (e.g. SQL database, AWS, Docker) and what kind of data your app processes. Based on that, you get a tailored set of questions — not generic checklists, but questions that actually match your stack.
 
-Am Ende siehst du konkret, was fehlt, warum es ein Problem ist und 
-wie du es behebst, inklusive Code-Beispielen.
+At the end you see exactly what is missing, why it is a problem, and how to fix it — including code examples.
 
 ---
 
-## Was steckt drin?
+## Features
 
-- Dynamische Fragen je nach Tech-Stack (Cloud, SQL, Docker, Payment)
-- Bewertung nach OWASP Top 10 & ISO 27001
-- Dashboard mit Verlauf deiner bisherigen Audits (LocalStorage)
-- Aktionsplan mit Code-Snippets direkt im Browser
-- Kein Backend, keine Abhängigkeiten – läuft komplett im Browser
-
----
-
-## Gebaut mit
-
-Vanilla JavaScript, HTML, CSS – bewusst ohne Frameworks,
-um zu zeigen was ohne React & Co. möglich ist.
+- Dynamic questions based on your tech stack (Cloud, SQL, Docker, Payment)
+- Assessment mapped to OWASP Top 10 & ISO 27001
+- Dashboard with audit history (LocalStorage)
+- Action plan with code snippets — directly in the browser
+- No backend, no dependencies — runs entirely client-side
 
 ---
 
-## Hintergrund
+## Built with
 
-Entstanden während meines Cybersecurity-Trainings bei Masterschool (2026).
-Ich wollte ein Tool bauen, das ich selbst bei eigenen Projekten 
-tatsächlich nutzen würde.
+Vanilla JavaScript, HTML, CSS — deliberately framework-free to show what is possible without React and similar tools.
+
+---
+
+## Background
+
+Built during my Cybersecurity training at Masterschool (2026).
+I wanted to create a tool I would actually use on my own projects.
