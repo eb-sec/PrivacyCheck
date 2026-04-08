@@ -8,9 +8,9 @@ A tool I built to give developers a quick, clear picture of where their web app 
 
 ## What does it do?
 
-You specify which technologies you use (e.g. SQL database, AWS, Docker) and what kind of data your app processes. Based on that, you get a tailored set of questions — not generic checklists, but questions that actually match your stack.
+You specify which technologies you use (e.g. SQL database, AWS, Docker) and what kind of data your app processes. Based on that, you get a tailored set of questions and not generic checklists, but questions that actually match your stack.
 
-At the end you see exactly what is missing, why it is a problem, and how to fix it — including code examples.
+At the end you see exactly what is missing, why it is a problem, and how to fix it, including code examples.
 
 ---
 
@@ -19,8 +19,8 @@ At the end you see exactly what is missing, why it is a problem, and how to fix 
 - Dynamic questions based on your tech stack (Cloud, SQL, Docker, Payment)
 - Assessment mapped to OWASP Top 10 & ISO 27001
 - Dashboard with audit history (LocalStorage)
-- Action plan with code snippets — directly in the browser
-- No backend, no dependencies — runs entirely client-side
+- Action plan with code snippets —>directly in the browser
+- No backend, no dependencies —> runs entirely client-side
 
 ---
 
